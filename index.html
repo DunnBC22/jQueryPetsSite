@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="./index.js"></script>
+    <title>Dog Pictures</title>
+    <link rel="icon" href="./Pics/favicon-32x32.png" />
+  </head>
+  <body>
+    <div id="content-pane">
+      <header>
+        <div class="header-item">
+          <h1>Dog Pictures</h1>
+          <h4>Because dogs are family too!</h4>
+        </div>
+      </header>
+      <div id="dog-picture"></div>
+      <div id="tabs">
+        <ul>
+          <!--The below code creates the actual tabs-->
+          <li><a href="#about-me" class="amtabs">About Me</a></li>
+          <li><a href="#about-this-site" class="amtabs">About This Site</a></li>
+        </ul>
+        <!--The 2 divs below are the content within each tab-->
+        <div id="about-me">
+          <a
+            href="https://www.linkedin.com/in/DunnBC22"
+            alt="Brian Dunn's LinkedIn Profile"
+            target="_blank"
+          >
+            <img
+              src="./Pics/LinkedInPic.jpg"
+              alt="Picture of Brian Dunn"
+              id="linkedin-pic"
+          /></a>
+          <br />
+          <a
+            href="./PDFs/BrianDunnResume.pdf"
+            alt="Brian Dunn's Resume"
+            target="_blank"
+            ><input
+              type="button"
+              name="resume"
+              value="View Resume"
+              id="pdf-resume"
+              class="button"
+          /></a>
+        </div>
+        <div id="about-this-site">
+          <p>
+            The purpose of this site is to demonstrate my knowledge of both AJAX
+            and jQuery, as well as the basics (HTML5, CSS3, JavaScript, and
+            Responsive Web Design). With each site that I build, I want to show
+            different skills.
+          </p>
+        </div>
+      </div>
+      <div>
+        <form>
+          <input
+            type="button"
+            value="Print"
+            onclick="window.print()"
+            class="button"
+          />
+        </form>
+      </div>
+
+      <footer>
+        <div class="footer-contact" id="phone-num">
+          <a href="tel:262-923-0473">262-923-0473</a>
+        </div>
+
+        <div class="footer-contact" id="email">
+          <a href="mailto:DunnBC22@gmail.com?subject=I Saw Your Dog API Webpage"
+            >DunnBC22@gmail.com</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
